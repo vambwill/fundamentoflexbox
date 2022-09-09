@@ -1,0 +1,295 @@
+* {
+    margin-top: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+/*div img{
+    display: block;
+    width: 100%;
+}*/
+
+.flex-containermenu {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: blue;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px 15px;
+    max-width: 100%;
+}
+
+.h1-menu {
+    display: flex;
+    margin-top: 20px;
+    font-size: 48px;
+    align-items: center;
+}
+
+
+.list-itens {
+    display: flex;
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.li-menu a {
+    color: white;
+}
+
+.apresentacao{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+}
+
+.apresentacao .texto-apresentacao {
+    min-height: 200px;
+    margin-left: 150px;
+}
+
+.texto-apresentacao h1 {
+    color: blue;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao a {
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 150px;
+    display: block;
+    height: 45px;
+    text-decoration: none;
+    line-height: 3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.flex-containerSomos{
+    display: flex;
+    max-width: 80%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10;
+    margin-bottom: 10px;
+}
+
+.imgSomos {
+    margin-left: 100px;
+}
+ 
+.textoSomos {
+    max-width: 300px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+.textoSomos h2 {
+    font-size: 40px;
+    color: blue;
+    display: flex;
+}
+
+.textoSomos p{
+    font-size: 17px;
+}
+
+.textoSomos h2::before {
+    content: '';
+    height: 40px;
+    border: 2px solid;
+    margin: 3px;
+    position: relative;
+}
+
+
+.Flex-servicos {
+    display: flex;
+    background: blue;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 450px;
+}
+
+.tituloServicos {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: blue;
+}
+
+.Flex-servicos p {
+    font-size: 20px;
+}
+
+.Flex-servicos a {
+    text-align: center;
+}
+
+.img-servicos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-servicos p{
+    text-align: center;
+    display: block;
+}
+
+.img-servicos a{
+    font-size: 15px;
+    background-color: white;
+    color: blue;
+    border-radius: 50%;
+    text-align: center;
+    width: 120px;
+    display: block;
+    height: 45px;
+    text-decoration: none;
+    line-height: 3;
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+
+.tituloPlanos {
+    margin-top: 80px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    
+}
+
+.container-plano {
+    margin-top: 20px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.planos {
+    text-align: center;
+    border: 4px solid blue;
+    width: 200px;
+    height: 240px;
+    color: blue;
+    font-size: 18px;
+}
+
+.planos h3::after {
+    display: flex;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: blue;
+    margin: 20px;
+    margin-top: 5px;
+}
+
+.planos ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.planos ul li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: blue;
+    margin: 5px;
+}
+
+.planos a{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    width: 120px;
+    display: block;
+    height: 45px;
+    text-decoration: none;
+    line-height: 2.5;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+footer {
+    background-color: blue;
+    height: 30px;
+
+}
+
+.flex-containerFooter {
+    color: white;
+    font-size: 20PX;
+    text-align: center;
+    align-items: center;
+}
+
+@media(max-width: 992px){
+    .flex-containermenu{
+        flex-direction: column;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .flex-containerSomos{
+        flex-direction: column-reverse;
+    }
+    .container-plano{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-plano .planos{
+        margin: 10px;
+    }
+    .flex-containerFooter{
+        font-size: 18px;
+    }
+    .apresentacao .texto-apresentacao {
+        margin-left: 10px;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+    .Flex-servicos{
+        height: 1000px;
+    }
+
+    .img-servicos{
+        align-items: center;
+        flex-direction: column;
+   }
+   .img-bannerPrincipal {
+        margin-top: 120px;
+   }
+   
+}
